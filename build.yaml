@@ -20,6 +20,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: K02-L
+    shield: cradio_left
   - board: nice_nano_v2
-    shield: K02-R
+    shield: cradio_right
