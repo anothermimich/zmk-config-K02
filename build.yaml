@@ -19,7 +19,9 @@
 #
 ---
 include:
+  # Left
   - board: nice_nano_v2
     shield: cradio_left
+    # Right
   - board: nice_nano_v2
     shield: cradio_right
