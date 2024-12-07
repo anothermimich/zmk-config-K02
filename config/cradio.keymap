@@ -30,7 +30,7 @@
     combos {
         compatible = "zmk,combos";
 
-        C-ESC {
+        c_esc {
             bindings = <&kp ESC>;
             key-positions = <30 31>;
         };
