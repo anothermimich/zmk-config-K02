@@ -34,17 +34,20 @@
             timeout-ms = <300>;
             key-positions = <30 31>;
             bindings = <&lt MDA ESC>;
+            layers = <0>;
         };
 
         combo_del {
             timeout-ms = <300>;
             key-positions = <32 33>;
             bindings = <&lt FUN DEL>;
+            layers = <0>;
         };
 
         cced_combo {
             bindings = <&cced_macro>;
             key-positions = <12 22>;
+            layers = <0>;
         };
     };
 
