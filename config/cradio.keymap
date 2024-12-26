@@ -2,16 +2,16 @@
 // SPDX-License-Identifier: MIT
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 // Layer definitions
-    #define BSE 0
-    #define MDA 1
-    #define NAV 2
-    #define SYM 3
-    #define NUM 4
-    #define FUN 5
+
+#define BSE 0
+#define MDA 1
+#define NAV 2
+#define SYM 3
+#define NUM 4
+#define FUN 5
 
 / {
     behaviors {
@@ -26,7 +26,6 @@
         };
     };
 
-
     combos {
         compatible = "zmk,combos";
 
@@ -35,10 +34,25 @@
             key-positions = <30 31>;
             bindings = <&lt MDA ESC>;
         };
+
         combo_del {
             timeout-ms = <300>;
             key-positions = <32 33>;
             bindings = <&lt FUN DEL>;
+        };
+
+        cced_combo {
+            bindings = <&cced_macro>;
+            key-positions = <12 22>;
+        };
+    };
+
+    macros {
+        cced_macro: cced_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C>;
+            label = "CCED_MACRO";
         };
     };
 
@@ -47,62 +61,45 @@
 
         base_layer {
             bindings = <
-
-                &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,            \
-                &mt LGUI A,        &mt LALT S,        &mt LCTRL D,       &mt LSHFT F,       &kp G,             &kp H,             &mt LSHFT J,       &mt LCTRL K,       &mt LALT L,        &mt LGUI SQT,     \
-                &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,        \
-                                                                         &lt NAV SPACE,     &kp TAB,           &lt SYM RET,       &lt NUM BSPC,      
+&kp Q       &kp W       &kp E        &kp R          &kp T      &kp Y        &kp U         &kp I        &kp O       &kp P
+&mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H        &mt LSHFT J   &mt LCTRL K  &mt LALT L  &mt LGUI SQT
+&kp Z       &kp X       &kp C        &kp V          &kp B      &kp N        &kp M         &kp COMMA    &kp DOT     &kp SLASH
+                                     &lt NAV SPACE  &kp TAB    &lt SYM RET  &lt NUM BSPC
             >;
         };
 
         media_layer {
             bindings = <
-
-                &none,             &none,             &none,             &none,             &none,              &none,             &none,             &none,             &none,             &none,           \
-                &none,             &none,             &none,             &none,             &none,              &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        &none,           \
-                &none,             &none,             &none,             &none,             &none,              &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_CLR,      \
-                                                                         &none,              &none,              &kp C_PP,          &kp C_MUTE,        
+&none none none none none none none none none none none none none none none kp kp kp kp none none none none none none bt
             >;
         };
 
         nav_layer {
             bindings = <
-
-                &none,             &none,             &none,             &none,             &none,              &none,             &none,             &none,             &none,             &none,           \
-                &none,             &none,             &none,             &none,             &none,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         &u_caps_word,    \
-                &none,             &none,             &none,             &none,             &none,              &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           &kp INS,         \
-                                                                         &none,             &none,              &kp RET,            &kp BSPC,                            
+&none none none none none none none none none none none none none none none kp kp kp kp u_caps_word none none none none none kp kp kp kp kp none none kp kp
             >;
         };
 
         sym_layer {
             bindings = <
-
-                &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          &none,              &none,             &none,             &none,             &none,   \
-                &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          &none,              &none,             &none,             &none,             &none,          \
-                &kp COLON,         &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp PLUS,          &none,              &none,             &none,             &none,             &none,          \
-                &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,          &none,              &none,             &none,             &none,             &none,          \
-                                                                         &kp RPAR,          &kp UNDER,         &none,              &none,             
+&kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK none none none none none kp kp kp kp kp none none none none none kp kp kp kp kp none none none none none kp kp kp kp kp none none none none none kp kp none none
             >;
         };
 
         num_layer {
-
             bindings = <
-                &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          &none,              &none,             &none,             &none,            &none            \
-                &kp SEMI,          &kp N4,            &kp N5,            &kp N7,            &kp EQUAL,         &none,              &none,             &none,             &none,            &none,           \
+&kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT none none none none none
+            >;
+
+            &kp SEMI,          &kp N4,            &kp N5,            &kp N7,            &kp EQUAL,         &none,              &none,             &none,             &none,            &none,           \
                 &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          &none,              &none,             &none,             &none,            &none,           \
                                                                          &kp N0,            &kp MINUS,         &none,              &none,
             >;
         };
 
         fun_layer {
-            
             bindings = <
-                &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         &none,             &none,              &none,             &none,             &none,          \
-                &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          &none,              &none,             &none,             &none,             &none,          \
-                &kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   &none,              &none,             &none,             &none,             &none,          \
-                                                                         &none,             &none,             &none,              &none,                    
+&kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN none none none none none kp kp kp kp kp none none none none none kp kp kp kp kp none none none none none none none none none
             >;
         };
     };
