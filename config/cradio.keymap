@@ -57,6 +57,7 @@
 
         media_layer {
             bindings = <
+
                 &none,             &none,             &none,             &none,             &none,              &none,             &none,             &none,             &none,             &none,           \
                 &none,             &none,             &none,             &none,             &none,              &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        &none,           \
                 &none,             &none,             &none,             &none,             &none,              &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_CLR,      \
@@ -66,6 +67,7 @@
 
         nav_layer {
             bindings = <
+
                 &none,             &none,             &none,             &none,             &none,              &none,             &none,             &none,             &none,             &none,           \
                 &none,             &none,             &none,             &none,             &none,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         &u_caps_word,    \
                 &none,             &none,             &none,             &none,             &none,              &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           &kp INS,         \
@@ -75,6 +77,8 @@
 
         sym_layer {
             bindings = <
+
+                &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          &none,              &none,             &none,             &none,             &none,   \
                 &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          &none,              &none,             &none,             &none,             &none,          \
                 &kp COLON,         &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp PLUS,          &none,              &none,             &none,             &none,             &none,          \
                 &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,          &none,              &none,             &none,             &none,             &none,          \
@@ -83,6 +87,7 @@
         };
 
         num_layer {
+
             bindings = <
                 &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          &none,              &none,             &none,             &none,            &none            \
                 &kp SEMI,          &kp N4,            &kp N5,            &kp N7,            &kp EQUAL,         &none,              &none,             &none,             &none,            &none,           \
@@ -92,6 +97,7 @@
         };
 
         fun_layer {
+            
             bindings = <
                 &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         &none,             &none,              &none,             &none,             &none,          \
                 &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          &none,              &none,             &none,             &none,             &none,          \
