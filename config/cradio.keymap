@@ -67,14 +67,39 @@
             key-positions = <12 22>;
             layers = <0>;
         };
+
+        atil_combo {
+            bindings = <&atil_macro>;
+            key-positions = <10 20>;
+            layers = <0>;
+        };
+
+        ecir_combo {
+            bindings = <&ecir_macro>;
+            key-positions = <2 12>;
+        };
     };
 
     macros {
         cced_macro: cced_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp C>;
+            bindings = <&kp SINGLE_QUOTE &kp C>;
             label = "CCED_MACRO";
+        };
+
+        atil_macro: atil_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp A>;
+            label = "ATIL_MACRO";
+        };
+
+        ecir_macro: ecir_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp E>;
+            label = "ECIR_MACRO";
         };
     };
 
