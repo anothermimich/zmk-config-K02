@@ -16,14 +16,30 @@
 
 / {
     behaviors {
-        ht: hold_tap {
+        hmr: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <0 24 23 22 21 20 0 1 2 3 4 10 11 12 13 14 31 30 33 32>;
+            hold-trigger-on-release;
+        };
+
+        hml: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33 30 31>;
         };
     };
 
