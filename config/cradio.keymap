@@ -77,6 +77,7 @@
         ecir_combo {
             bindings = <&ecir_macro>;
             key-positions = <2 12>;
+            layers = <0>;
         };
     };
 
