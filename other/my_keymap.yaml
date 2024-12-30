@@ -1,0 +1,239 @@
+layout: {qmk_keyboard: ferris_rotated}
+layers:
+  base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: GUI}
+  - {t: S, h: ALT}
+  - {t: D, h: CTRL}
+  - {t: F, h: SHFT}
+  - G
+  - H
+  - {t: J, h: SHFT}
+  - {t: K, h: CTRL}
+  - {t: L, h: ALT}
+  - {t: '''', h: GUI}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: SPACE, h: nav}
+  - {t: TAB, h: nav}
+  - {t: RET, h: sym}
+  - {t: BSPC, h: num}
+  media:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - {type: held}
+  - {type: held}
+  - PLAY PAUSE
+  - MUTE
+  nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - CAPS WORD
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - INS
+  - {type: held}
+  - ''
+  - RET
+  - BSPC
+  sym:
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - )
+  - _
+  - {type: held}
+  - ''
+  num:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ;
+  - '4'
+  - '5'
+  - '7'
+  - '='
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '0'
+  - '-'
+  - ''
+  - {type: held}
+  fun:
+  - F12
+  - F7
+  - F8
+  - F9
+  - PSCRN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+combos:
+- p: [30, 31]
+  k: {t: ESC}
+  a: top
+  l: [base]
+- p: [32, 33]
+  k: {t: DEL}
+  a: top
+  l: [base]
+- p: [12, 22]
+  k: ç
+  l: [base]
+- p: [10, 20]
+  k: ã
+  l: [base]
+- p: [2, 12]
+  k: ê
+  l: [base]
+- p: [8, 18]
+  k: ô
+  l: [base]
+- p: [18, 28]
+  k: õ
+  l: [base]
+- p: [0, 10]
+  k: â
+  l: [base]
