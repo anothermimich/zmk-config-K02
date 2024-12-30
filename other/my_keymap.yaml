@@ -55,7 +55,7 @@ layers:
   - VOL DN
   - VOL UP
   - NEXT
-  - ''
+  - ALT F4
   - ''
   - ''
   - ''
@@ -154,7 +154,7 @@ layers:
   - ;
   - '4'
   - '5'
-  - '7'
+  - '6'
   - '='
   - ''
   - ''
@@ -222,18 +222,24 @@ combos:
 - p: [12, 22]
   k: ç
   l: [base]
+  a: left
 - p: [10, 20]
   k: ã
   l: [base]
+  a: left
 - p: [2, 12]
   k: ê
   l: [base]
+  a: left
 - p: [8, 18]
   k: ô
+  a: right
   l: [base]
 - p: [18, 28]
   k: õ
   l: [base]
+  a: right
 - p: [0, 10]
   k: â
+  a: left
   l: [base]
