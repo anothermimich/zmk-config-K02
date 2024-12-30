@@ -79,6 +79,23 @@
             key-positions = <2 12>;
             layers = <0>;
         };
+
+        ocir_combo {
+            bindings = <&ocir_macro>;
+            key-positions = <8 18>;
+            layers = <0>;
+        };
+
+        otil_combo {
+            bindings = <&otil_macro>;
+            key-positions = <18 28>;
+            layers = <0>;
+        };
+
+        acir_combo {
+            bindings = <&acir_macro>;
+            key-positions = <0 10>;
+        };
     };
 
     macros {
@@ -101,6 +118,27 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp E>;
             label = "ECIR_MACRO";
+        };
+
+        ocir_macro: ocir_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp O>;
+            label = "OCIR_MACRO";
+        };
+
+        otil_macro: otil_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp O>;
+            label = "OTIL_MACRO";
+        };
+
+        acir_macro: acir_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp A>;
+            label = "ACIR_MACRO";
         };
     };
 
