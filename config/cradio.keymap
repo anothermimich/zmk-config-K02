@@ -95,6 +95,7 @@
         acir_combo {
             bindings = <&acir_macro>;
             key-positions = <0 10>;
+            layers = <0>;
         };
     };
 
