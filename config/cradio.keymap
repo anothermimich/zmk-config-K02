@@ -48,14 +48,14 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        esc_combo {
             timeout-ms = <300>;
             key-positions = <30 31>;
             bindings = <&lt MDA ESC>;
             layers = <0>;
         };
 
-        combo_del {
+        del_combo {
             timeout-ms = <300>;
             key-positions = <32 33>;
             bindings = <&lt FUN DEL>;
