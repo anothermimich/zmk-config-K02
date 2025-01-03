@@ -53,6 +53,7 @@ text {
 text.label {
     font-weight: bold;
     text-anchor: start;
+    stroke-width: 0;
 }
 
 /* styling for optional footer */
