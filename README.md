@@ -7,7 +7,7 @@ This keymap was made to be used with [K02](https://github.com/anothermimich/K02/
 I've taken inspiration from [Robert U](https://github.com/urob) [homerow mods](https://github.com/urob/zmk-config#timeless-homerow-mods) and [Miryoku ZMK](https://github.com/manna-harbour/miryoku_zmk) keymap made by [Manna Harbour](https://github.com/manna-harbour).
 
 <a href="/other/img/k02-keymap.pdf" float="center">
-<img src="/other/img/k02-keymap.jpg" width="96%" style="border-radius:20%" />
+<img src="/other/img/k02-keymap.jpg" width="96%" style="border:0px; border-radius:20%;" />
 </a>
 
 ### Disclaimer
